@@ -1,11 +1,11 @@
 *{
     padding: 0;
-    margin: 0%;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'bahnschrift';
     text-decoration: none;
 }
-.container{
+.container{ 
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -20,5 +20,136 @@
     background: #000;
     width: 70%;
     height: 100%;
+}
 
+.left h1{
+    color: #ec1321;
+    left: 10%;
+    top: 25%;
+    position: relative;
+    font-size: 60px;
+
+}
+
+.left p{
+    color: #fff;
+    width: 510px;
+    height: 200px;
+    position: relative;
+    left: 10%;
+    top: 30%;   
+}
+
+.left .content-button{
+
+    width: 400px;
+    height: 100px;
+    left: 8%;
+    top: 22%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.content-button button{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    position: relative;
+    border: 3px solid #ec1321;
+    color: #ec1321;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.content-button button:nth-child(1){
+    background: #ec1321;
+    color: #fff;
+
+}
+
+button:hover{
+    background: #ec1321;
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+
+.right{
+    width: 30%;
+    height: 100%;
+    right: 0;
+    background: #ec1321;    
+    position: absolute;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    top: 0;
+    position: absolute;
+}
+
+.header #logo{
+    color: #ec1321;
+    font-family: 'Brush script MT';
+    position: relative;
+    margin: 30px 130px;
+    font-weight: bold;
+}
+
+.header .menu{
+    width: 500px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    left: 35%;
+    position: absolute;
+    top: 0;
+
+}
+
+.menu a{
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.menu a:nth-child(1){
+    color: #ec1321;
+    font-weight: bold;
+
+}
+
+.menu a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    background: #ec1321;
+    transition: 0.3s ease;
+}
+.menu a:hover{
+    color: #ec1321;
+    transition: 0.2s ease;
+
+}
+
+.menu a:hover::after{
+    width: 100%;
+    transition: 0.2s ease;
+}
+
+img{
+    height:400px;
+    right: 1%;
+    top: 17%;
+    position: absolute;
 }
